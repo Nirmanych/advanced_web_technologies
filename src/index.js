@@ -1,9 +1,11 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import ReactDOM from 'react-dom';
+
 import AppHeader from "./components/app-header";
 import SearchPanel from "./components/search-panel";
 import TodoList from "./components/todo-list";
+import ItemStatusFilter from "./components/item-status-filter";
 
 
   const App = () => {
@@ -19,7 +21,8 @@ import TodoList from "./components/todo-list";
             <div>
                 <AppHeader />
                 <SearchPanel />
-                <TodoList todos =  {todoData} />            
+                <TodoList todos =  {todoData} />
+                <ItemStatusFilter />            
             </div>
         );
   }
